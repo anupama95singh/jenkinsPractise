@@ -1,0 +1,52 @@
+home folder  :::  .jenkins
+
+home directory ::: 	/var/lib/jenkins
+
+if changing home dir then set path and home_dir
+
+java -jar jenkins.war --httpPort=9090
+
+http://172.16.18.188:9090/restart
+
+http://172.16.18.188:9090/systemInfo
+
+########################################################
+
+
+
+
+sudo service jenkins start
+
+systemctl status jenkins
+
+enable security checked
+
+http://172.16.18.188:9090/cli/
+
+creating users
+
+roles strategy plugin for managing roles
+
+# of executors:::: run maximun no of parallel jobs
+
+manage nodes::: add extra machine to the jenkins
+
+quiet period :: no of seconds the jenkins should wait before triggering another job
+
+Poll SCM ::as soon as someone commit in git repo job is trigerred
+
+SCM checkout retry count ::: 5
+
+https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04
+##########################################################
+
+jobs :::
+
+Build periodically   * * * * *     
+
+////access your job from outside
+
+http://172.16.18.188:9090/job/DevChatbot/build?token=1234
+
+Build after other projects are built ::: select the name of the project after which you want to trigger the build >>> Post-build Actions >>> Build other projects >>> name of the project you want to build after this project
+
